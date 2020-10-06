@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% with config=settings.PLUGINS_CONFIG.support_contracts_plugin %}
+<h2 class="text-center" style="margin-top: 200px">
+    {% if contract %}
+        Contract: {{ contract.name}}
+    {% else %}
+        No cotracts have been created yet!
+    {% endif %}
+</h2>
+<p class="text-center">
+    <a href="{% url 'plugins:support_contracts_plugin:list_contracts' %}">Show all contracts</a>
+</p>
+{% endwith %}
+{% endblock %}
+

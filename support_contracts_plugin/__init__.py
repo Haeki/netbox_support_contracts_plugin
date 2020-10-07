@@ -13,7 +13,7 @@ class SupportContractsConfig(PluginConfig):
     description = 'Plugin that allows to create support contracts and add them to devices'
 
     # Plugin version
-    version = '0.1'
+    version = '0.2'
 
     # Plugin author
     author = 'Mika Busch'
